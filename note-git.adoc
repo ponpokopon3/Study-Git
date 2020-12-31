@@ -259,16 +259,37 @@ git commit
 +
 [[app-listing]]
 [source,git]
-.optionなし
 ----
-git commit
+git status
 ----
 
-. エディターが立ち上がる
+. ステータスが表示される
++
+[[app-listing]]
+[source,git]
+.リポジトリとステージ、ステージとワークツリーに差分がないとき
+----
+On branch master
+nothing to commit, working tree clean
+----
++
+[[app-listing]]
+[source,git]
+.ステージとワークツリーに差分があるとき
+----
+Changes not staged for commit:
+    mofdified:  filename1
+----
++
+[[app-listing]]
+[source,git]
+.リポジトリとステージに差分があるとき
+----
+Changes to be committed:
+    mofdified:  filename1
+----
 
-. エディターにコミットメッセージを記載し、保存する
-
-. ターミナルに戻り、コミットメッセージ、コミットした内容が表示されていることを確認する
+=== 変更差分を確認しよう
 
 == 用語集
 
