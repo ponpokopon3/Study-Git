@@ -291,6 +291,26 @@ Changes to be committed:
 
 === 変更差分を確認しよう
 
+. ターミナル（Git Bash）を起動する
+
+. 下記のコマンドを投入し、ファイルの変更差分を確認する
++
+[[app-listing]]
+[source,git]
+.ステージとワークツリーの差分
+----
+git diff
+----
++
+[[app-listing]]
+[source,git]
+.リポジトリとステージの差分
+----
+git diff --staged
+----
+
+=== 変更履歴を確認しよう
+
 == 用語集
 
 Git::
