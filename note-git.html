@@ -473,6 +473,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_リモートリポジトリを元にローカルリポジトリを作ろう">4.2. リモートリポジトリを元にローカルリポジトリを作ろう</a></li>
 <li><a href="#_ファイルの変更をステージに追加しよう">4.3. ファイルの変更をステージに追加しよう</a></li>
 <li><a href="#_ファイルの変更を記録しよう">4.4. ファイルの変更を記録しよう</a></li>
+<li><a href="#_どのファイルが変更されたかを確認しよう">4.5. どのファイルが変更されたかを確認しよう</a></li>
+<li><a href="#_ファイルの変更内容を確認しよう">4.6. ファイルの変更内容を確認しよう</a></li>
+<li><a href="#_ファイルを削除しよう">4.7. ファイルを削除しよう</a></li>
+<li><a href="#_ファイルを移動またはリネームしよう">4.8. ファイルを移動（またはリネーム）しよう</a></li>
+<li><a href="#_ファイルをリモートリポジトリに記録しよう">4.9. ファイルをリモートリポジトリに記録しよう</a></li>
+<li><a href="#_コマンドにエイリアスをつけよう">4.10. コマンドにエイリアスをつけよう</a></li>
+<li><a href="#_バージョン管理しないファイルを無視しよう">4.11. バージョン管理しないファイルを無視しよう</a></li>
+<li><a href="#_ワークツリーのファイルの変更を元に戻そう">4.12. ワークツリーのファイルの変更を元に戻そう</a></li>
+<li><a href="#_ステージのファイルの変更を元に戻そう">4.13. ステージのファイルの変更を元に戻そう</a></li>
+<li><a href="#_直前のコミットをやり直そう">4.14. 直前のコミットをやり直そう</a></li>
 </ul>
 </li>
 <li><a href="#_用語集">5. 用語集</a></li>
@@ -829,8 +839,15 @@ cd [ディレクトリ名]</code></pre>
 <div class="olist arabic data-line-214">
 <ol class="arabic">
 <li class="data-line-214">
-<p>下記のコマンドを投入し、ファイルの変更をステージに追加しよう</p>
-<div id="app-listing" class="listingblock data-line-218">
+<p>下記のコマンドを投入し、ファイルの変更をステージに追加する</p>
+<div id="app-listing" class="listingblock data-line-219">
+<div class="title">変更範囲を指定</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git add [ファイル名またはディレクトリ名]</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock data-line-226">
+<div class="title">全範囲を指定</div>
 <div class="content">
 <pre class="highlight"><code class="language-git" data-lang="git">git add .</code></pre>
 </div>
@@ -839,69 +856,361 @@ cd [ディレクトリ名]</code></pre>
 </ol>
 </div>
 </div>
-<div class="sect2 data-line-222">
+<div class="sect2 data-line-230">
 <h3 id="_ファイルの変更を記録しよう"><a class="link" href="#_ファイルの変更を記録しよう">4.4. ファイルの変更を記録しよう</a></h3>
-<div class="olist arabic data-line-224">
+<div class="olist arabic data-line-232">
 <ol class="arabic">
-<li class="data-line-224">
-<p>下記のコマンドを投入し、ファイルの変更を記録しよう</p>
-<div id="app-listing" class="listingblock data-line-229">
+<li class="data-line-232">
+<p>下記のコマンドを投入し、ファイルの変更を記録する</p>
+<div id="app-listing" class="listingblock data-line-237">
 <div class="title">optionなし</div>
 <div class="content">
 <pre class="highlight"><code class="language-git" data-lang="git">git commit</code></pre>
 </div>
 </div>
 </li>
-<li class="data-line-233">
+<li class="data-line-241">
 <p>エディターが立ち上がる</p>
 </li>
-<li class="data-line-235">
+<li class="data-line-243">
 <p>エディターにコミットメッセージを記載し、保存する</p>
 </li>
-<li class="data-line-237">
+<li class="data-line-245">
 <p>ターミナルを確認し、コミットメッセージ、コミットした内容が表示されていることを確認する</p>
 </li>
 </ol>
 </div>
 </div>
+<div class="sect2 data-line-247">
+<h3 id="_どのファイルが変更されたかを確認しよう"><a class="link" href="#_どのファイルが変更されたかを確認しよう">4.5. どのファイルが変更されたかを確認しよう</a></h3>
+<div class="olist arabic data-line-249">
+<ol class="arabic">
+<li class="data-line-249">
+<p>下記のコマンドを投入し、ファイルの変更を確認する</p>
+<div id="app-listing" class="listingblock data-line-253">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git status</code></pre>
 </div>
 </div>
-<div class="sect1 data-line-241">
+</li>
+<li class="data-line-257">
+<p>ターミナルを確認し、ワークツリーとステージ、ステージとコミットの変更点を確認する</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-259">
+<h3 id="_ファイルの変更内容を確認しよう"><a class="link" href="#_ファイルの変更内容を確認しよう">4.6. ファイルの変更内容を確認しよう</a></h3>
+<div class="olist arabic data-line-261">
+<ol class="arabic">
+<li class="data-line-261">
+<p>下記のコマンドを投入し、ファイルの変更を確認する</p>
+<div id="app-listing" class="listingblock data-line-266">
+<div class="title">ワークツリーとステージ</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git diff [ファイル名]</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock data-line-273">
+<div class="title">ステージとコミット</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git diff --staged [ファイル名]</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-277">
+<p>ターミナルを確認し、ワークツリーとステージ、ステージとコミットの変更点を確認する</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-279">
+<h3 id="_ファイルを削除しよう"><a class="link" href="#_ファイルを削除しよう">4.7. ファイルを削除しよう</a></h3>
+<div class="olist arabic data-line-281">
+<ol class="arabic">
+<li class="data-line-281">
+<p>下記のコマンドを投入し、ファイルを削除する</p>
+<div id="app-listing" class="listingblock data-line-286">
+<div class="title">リポジトリとワークツリーから削除する</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git rm [ファイル名]
+git rm [ディレクトリ名]</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock data-line-294">
+<div class="title">リポジトリからのみ削除する</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git rm --cached [ファイル名]</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-298">
+<p>「ls」または「git status」で削除されていることを確認する</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-300">
+<h3 id="_ファイルを移動またはリネームしよう"><a class="link" href="#_ファイルを移動またはリネームしよう">4.8. ファイルを移動（またはリネーム）しよう</a></h3>
+<div class="olist arabic data-line-302">
+<ol class="arabic">
+<li class="data-line-302">
+<p>下記のコマンドを投入し、ファイルを移動する</p>
+<div id="app-listing" class="listingblock data-line-306">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git mv [旧ファイル名] [新ファイル名]</code></pre>
+</div>
+</div>
+<div class="paragraph data-line-309">
+<p>下記を順に実行するのと同じ。</p>
+</div>
+<div id="app-listing" class="listingblock data-line-313">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">mv [旧ファイル名] [新ファイル名]
+git rm [旧ファイル名]
+git add [新ファイル名]</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-319">
+<p>「ls」または「git status」で移動されていることを確認する</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-321">
+<h3 id="_ファイルをリモートリポジトリに記録しよう"><a class="link" href="#_ファイルをリモートリポジトリに記録しよう">4.9. ファイルをリモートリポジトリに記録しよう</a></h3>
+<div class="olist arabic data-line-323">
+<ol class="arabic">
+<li class="data-line-323">
+<p>リモートリポジトリを作成する</p>
+<div class="paragraph data-line-325">
+<p><strong>Githubの場合</strong></p>
+</div>
+<div class="olist loweralpha data-line-327">
+<ol class="loweralpha" type="a">
+<li class="data-line-327">
+<p>Githubにログインする</p>
+</li>
+<li class="data-line-328">
+<p>右上のプロフィールメニューから「Your Repository」をクリックする</p>
+</li>
+<li class="data-line-329">
+<p>表示された画面の「Repository」タブをクリックする</p>
+</li>
+<li class="data-line-330">
+<p>btn:[NEW]をクリックする</p>
+</li>
+<li class="data-line-331">
+<p>リポジトリ名を入力し、btn:[Create Repository]をクリックする</p>
+</li>
+<li class="data-line-332">
+<p>リポジトリが作成されたことを確認する</p>
+</li>
+</ol>
+</div>
+</li>
+<li class="data-line-334">
+<p>下記のコマンドを投入し、リモートリポジトリを設定する</p>
+<div id="app-listing" class="listingblock data-line-338">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git remote add [リモート名] [リモートリポジトリのアドレス]</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-342">
+<p>下記のコマンドを投入し、ファイルをリモートリポジトリに記録する</p>
+<div id="app-listing" class="listingblock data-line-346">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git push [リモート名] [ブランチ名]</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-350">
+<p>リモートリポジトリが更新されていることを確認する</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-352">
+<h3 id="_コマンドにエイリアスをつけよう"><a class="link" href="#_コマンドにエイリアスをつけよう">4.10. コマンドにエイリアスをつけよう</a></h3>
+<div class="olist arabic data-line-354">
+<ol class="arabic">
+<li class="data-line-354">
+<p>下記のコマンドを投入し、エイリアスを設定する</p>
+<div id="app-listing" class="listingblock data-line-358">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git config --global alias.[エイリアス名] [コマンド名]</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock data-line-364">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.co checkout</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-371">
+<h3 id="_バージョン管理しないファイルを無視しよう"><a class="link" href="#_バージョン管理しないファイルを無視しよう">4.11. バージョン管理しないファイルを無視しよう</a></h3>
+<div class="paragraph data-line-373">
+<p><strong><em>Q . どんなファイルはバージョン管理しない？</em></strong></p>
+</div>
+<div class="paragraph data-line-375">
+<p><strong>A . 機密情報やチーム開発に利用しないファイル</strong><br>
+<strong>.gitignoreファイルを利用する</strong></p>
+</div>
+<div class="olist arabic data-line-378">
+<ol class="arabic">
+<li class="data-line-378">
+<p>「.gitignore」ファイルを追加し、中身に無視したいファイル名やディレクトリ名を記載する</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-380">
+<h3 id="_ワークツリーのファイルの変更を元に戻そう"><a class="link" href="#_ワークツリーのファイルの変更を元に戻そう">4.12. ワークツリーのファイルの変更を元に戻そう</a></h3>
+<div class="olist arabic data-line-382">
+<ol class="arabic">
+<li class="data-line-382">
+<p>下記のコマンドを投入し、ファイルをステージの状態に戻す</p>
+<div id="app-listing" class="listingblock data-line-387">
+<div class="title">変更範囲を指定</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git checkout -- [ファイル名またはディレクトリ名]</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock data-line-394">
+<div class="title">全範囲を指定</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git checkout -- .</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-398">
+<p>ワークツリーの内容が戻っていることを確認する</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2 data-line-400">
+<h3 id="_ステージのファイルの変更を元に戻そう"><a class="link" href="#_ステージのファイルの変更を元に戻そう">4.13. ステージのファイルの変更を元に戻そう</a></h3>
+<div class="olist arabic data-line-402">
+<ol class="arabic">
+<li class="data-line-402">
+<p>下記のコマンドを投入し、ファイルをステージの状態に戻す</p>
+<div id="app-listing" class="listingblock data-line-407">
+<div class="title">変更範囲を指定</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git reset HEAD [ファイル名またはディレクトリ名]</code></pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock data-line-414">
+<div class="title">全範囲を指定</div>
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git reset HEAD .</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-418">
+<p>ステージの内容が戻っていることを確認する</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note data-line-421">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph data-line-422">
+<p>このコマンドでワークツリーへは何も変化が起きないことに注意。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2 data-line-425">
+<h3 id="_直前のコミットをやり直そう"><a class="link" href="#_直前のコミットをやり直そう">4.14. 直前のコミットをやり直そう</a></h3>
+<div class="olist arabic data-line-427">
+<ol class="arabic">
+<li class="data-line-427">
+<p>下記のコマンドを投入し、コミットをひとつ前の状態に戻す</p>
+<div id="app-listing" class="listingblock data-line-431">
+<div class="content">
+<pre class="highlight"><code class="language-git" data-lang="git">git commit --amend</code></pre>
+</div>
+</div>
+</li>
+<li class="data-line-435">
+<p>コミットの内容が戻っていることを確認する</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock warning data-line-438">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph data-line-439">
+<p>このコマンドはリモートリポジトリにプッシュしたコミットは修正しないこと。プッシュした内容を修正したい場合は、追加で過去のコミットは取り消さず、修正したものを改めてコミットをする。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 data-line-442">
 <h2 id="_用語集"><a class="link" href="#_用語集">5. 用語集</a></h2>
 <div class="sectionbody">
-<div class="dlist data-line-243">
+<div class="dlist data-line-444">
 <dl>
-<dt class="hdlist1">Git</dt>
+<dt class="hdlist1">IT一般</dt>
+<dt class="hdlist1">Git特有</dt>
 <dd>
-<div class="ulist data-line-244">
+<div class="dlist data-line-447">
+<dl>
+<dt class="hdlist1">用語</dt>
+<dd>
+<div class="ulist data-line-448">
 <ul>
-<li class="data-line-244">
+<li class="data-line-448">
 <p><strong>ワークツリー</strong><br></p>
 </li>
-<li class="data-line-246">
+<li class="data-line-450">
 <p><strong>ステージ</strong><br></p>
 </li>
-<li class="data-line-248">
+<li class="data-line-452">
 <p><strong>ローカルリポジトリ</strong><br></p>
 </li>
-<li class="data-line-250">
+<li class="data-line-454">
 <p><strong>リモートリポジトリ</strong><br></p>
 </li>
-<li class="data-line-252">
+<li class="data-line-456">
 <p><strong>Git Object</strong><br>
 「.git/objects」配下に保存されるgitデータ</p>
-<div class="ulist data-line-254">
+<div class="ulist data-line-458">
 <ul>
-<li class="data-line-254">
+<li class="data-line-458">
 <p><strong>Blob Object</strong><br>
 ファイルをハッシュ関数で40文字の英数字に変換したもの</p>
 </li>
-<li class="data-line-256">
+<li class="data-line-460">
 <p><strong>Tree Object</strong><br>
 Blob ObjectまたはTree Objectとファイル名を紐付けたもの<br>
 ディレクトリ階層がある場合、子ディレクトリのTree Objectは親ディレクトリのTree Object内に含まれる</p>
 </li>
-<li class="data-line-259">
+<li class="data-line-463">
 <p><strong>Commit Object</strong><br>
 コミットした時点でのファイルとその構成、状態を示したもの<br>
 最上位のTree Object、親Commit Object、変更者情報、変更コメントが記載される</p>
@@ -912,22 +1221,25 @@ Blob ObjectまたはTree Objectとファイル名を紐付けたもの<br>
 </ul>
 </div>
 </dd>
-<dt class="hdlist1">Gitコマンド</dt>
+<dt class="hdlist1">コマンド</dt>
 <dd>
-<div class="ulist data-line-265">
+<div class="ulist data-line-468">
 <ul>
-<li class="data-line-265">
+<li class="data-line-468">
 <p><strong>git config</strong><br>
 aaaaaa</p>
 </li>
-<li class="data-line-267">
+<li class="data-line-470">
 <p><strong>git add</strong><br>
 aaaaaa</p>
 </li>
-<li class="data-line-269">
+<li class="data-line-472">
 <p><strong>git commit</strong><br></p>
 </li>
 </ul>
+</div>
+</dd>
+</dl>
 </div>
 </dd>
 </dl>
@@ -937,7 +1249,7 @@ aaaaaa</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-12-31 11:22:28 +0900
+Last updated 2021-01-08 01:03:19 +0900
 </div>
 </div>
 </body>
