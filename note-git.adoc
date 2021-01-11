@@ -602,7 +602,30 @@ git merge <ブランチ名>
 * pullするときは、pullするブランチに移動してからpullする
 * コンフリクトしても慌てない
 
-=== 
+=== ブランチを編集・削除しよう
+
+. 下記のコマンドを投入し、コミットをひとつ前の状態に戻す
++
+[[app-listing]]
+[source,git]
+.ブランチ名の変更
+----
+git branch -m <新ブランチ名>
+----
++
+[[app-listing]]
+[source,git]
+.削除
+----
+git branch -d <ブランチ名>
+----
++
+[[app-listing]]
+[source,git]
+.強制削除
+----
+git branch -D <ブランチ名>
+----
 
 == 用語集
 
