@@ -1,0 +1,31 @@
+== 用語集
+
+IT関連::
+  
+Git関連::
+  用語::: 
+    * *ワークツリー* +
+    
+    * *ステージ* +
+
+    * *ローカルリポジトリ* +
+
+    * *リモートリポジトリ* +
+
+    * *Git Object* +
+    「.git/objects」配下に保存されるgitデータ
+    ** *Blob Object* +
+    ファイルをハッシュ関数で40文字の英数字に変換したもの
+    ** *Tree Object* +
+    Blob ObjectまたはTree Objectとファイル名を紐付けたもの +
+    ディレクトリ階層がある場合、子ディレクトリのTree Objectは親ディレクトリのTree Object内に含まれる
+    ** *Commit Object* +
+    コミットした時点でのファイルとその構成、状態を示したもの +
+    最上位のTree Object、親Commit Object、変更者情報、変更コメントが記載される
+
+  コマンド:::
+    * *git config* +
+    aaaaaa
+    * *git add* +
+    aaaaaa
+    * *git commit* +

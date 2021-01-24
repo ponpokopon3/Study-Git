@@ -1,0 +1,92 @@
+== Git環境構築
+:chapter: {counter:chapter}
+
+=== Gitのインストール
+:section: {counter:section}
+:image-index: 0
+:table-index: 0
+
+. 下記のサイトからGit for Windowsのインストーラをダウンロードする。
++
+link:https://gitforwindows.org/[Git for Windows]
+
+. 全部初期設定のまま、インストールする。
+
+. インストールした中にある「Git Bash」を起動し、下記のコマンドを投入する。
++
+[source,git]
+----
+git -version
+----
+
+. インストールしたバージョンが表示されることを確認する。
+
+
+=== Githubへの登録
+:section: {counter:section}
+:image-index: 0
+:table-index: 0
+
+. 下記のサイトからGithubへサインアップする。
++
+link:https://github.com/[Github]
+
+. Email認証を行う。
+
+. Githubにログインできることを確認する。
+
+=== Gitの初期設定
+:section: {counter:section}
+:image-index: 0
+:table-index: 0
+
+. 「Git Bash」を起動する。
+
+. 下記のコマンドを投入し、ユーザ名を登録する。
++
+[source,git]
+----
+git config --global user.name "hogehoge"
+----
+. 下記のコマンドを投入し、メールアドレスを登録する。
++
+[source,git]
+----
+git config --global user.email hoge@hoge.com
+----
+
+. 下記のコマンドを投入し、エディターを設定する。
++
+[[app-listing]]
+[source,git]
+.Visual Studio Code
+----
+git config --global core.editor 'code --wait'
+----
++
+[[app-listing]]
+[source,git]
+.Atom
+----
+git config --global core.editor 'atom --wait'
+----
+
+. 下記のコマンドを投入し、設定を確認する。
++
+[[app-listing]]
+[source,git]
+----
+git config user.name // <1>
+git config user.email // <2>
+git config core.editor // <3>
+git config --list //<4>
+----
+<1> ユーザ名表示
+<2> メールアドレス表示
+<3> エディター表示
+<4> 全設定をリスト表示
+
+[Tips]
+====
+ここで設定した設定は「C:\\Users\username\.gitconfig」に保存されている。
+====

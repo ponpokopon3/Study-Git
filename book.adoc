@@ -1,0 +1,164 @@
+// 組込属性（ Intrinsic attributes , Read only ）
+//:asciidoctor:       Ex) Asciidoctor
+//:asciidoctor-version:Ex) 1.5.4
+//:backend:           Ex) html5
+//:basebackend:       Ex) html
+//:embedded:
+//:safe-mode-level:   0
+//:safe-mode-name:    UNSAFE
+//:safe-mode-unsafe:  
+//:safe-mode-safe:    
+//:safe-mode-server:  
+//:safe-mode-secure:  
+//:docdatetime:       yyyy-mm-dd HH:MM:SS UTC
+//:docyear:           yyyy
+//:docdate:           yyyy-mm-dd
+//:doctime:           HH:MM:SS UTC
+//:localdatetime:     yyyy-mm-dd HH:MM:SS UTC
+//:localdate:         yyyy-mm-dd
+//:localtime:         HH:MM:SS UTC
+//:user-home:         Ex) c:/Users/AsciidocUser/
+//:docfile:           Ex) c:/Users/AsciidocUser/Documents/thisfile.adoc
+//:docdir:            Ex) c:/Users/AsciidocUser/Documents
+//:docname:           Ex) thisfile
+//:docfilesuffix:     Ex) .adoc
+//:outfile:           Ex) c:/Users/AsciidocUser/Documents/outputfile.html
+//:outdir:            Ex) c:/Users/AsciidocUser/Documents/
+//:outfilesuffix:     Ex) .html
+//:filetype:          Ex) html
+//:htmlsyntax:        Ex) html
+
+//制御属性（ Compliance attributes ）
+//:attribute-missing: skip
+//:attribute-undefined:drop-line
+//:compat-mode:
+:experimental:
+//:reproducible:
+//:skip-front-matter:
+
+//文書属性
+:title:         Title
+//:notitle:
+//:showtitle:
+//:noheader:
+//:nofooter:
+//:nofootnotes:
+:doctype:       book
+:doctitle:      Doctitle
+//:docinfo:
+//:docinfodir:
+//:docinfosubs:
+//:orgname:
+//:app-name:
+//:description:
+//:keywords:
+//:front-matter:
+//:copyright:
+//:asset-uri-scheme:
+//:hide-uri-scheme:
+//:show-link-uri:
+//:cache-uri:
+//:data-uri:
+//:eqnums:
+//:hardbreaks-option:
+//:media:
+//:relfileprefix:
+//:relfilesuffix:
+//:stem:
+//:pagewidth:
+//:tabsize:
+//:webfonts:
+//:xrefstyle:
+
+//著者属性
+:author:        Pon P. Pon
+//:firstname:       Firstname
+//:middlename:      Middlename
+//:lastname:        Lastname
+//:authorinitials:
+//:authors:
+//:email:
+
+//改訂情報属性
+:revdate:       Jan 1, 2021
+:revnumber:     1.0.0
+:revremark:     First Version
+:version-label!:
+
+//文書固有属性
+:lang:              ja
+//:nolang:
+//:chapter-number:    
+//:chapter-refsig:    
+//:chapter-signifier: 
+//:part-refsig:
+//:part-signifier:
+//:section-refsig:
+:toc-title:         目次
+:preface-title:     まえがき
+:manname-title:     マニュアル
+:untitled-label:    無題
+:version-label:     バージョン
+:last-update-label: 最終更新
+:tip-caption:       ヒント
+:important-caption: 重要
+:note-caption:      注記
+:caution-caption:   注意
+:warning-caption:   警告
+//:figure-caption:    図
+:figure-caption!:
+//:figure-number:
+//:table-caption:     表
+:table-caption!:
+//:table-number:
+//:example-caption:   例
+:example-caption!:
+//:example-number:
+//:listing-caption:   リスト
+//:listing-number:
+//:appendix-caption:  付録
+//:appendix-number:
+//:appendix-refsig:
+
+// 見出し設定
+//:idprefix:          -
+//:idseparator:       -
+//:leveloffset:       0
+//:partnums:          
+:sectanchors:       
+:sectlinks:         
+:sectnums:
+:sectnumlevels:     5
+//:title-separator:   
+//:fragment:          
+
+// 目次属性
+:toc:
+:toclevels: 3
+:chapter: 0
+<<<
+== 第一章
+:chapter: {counter:chapter}
+=== 第一節
+:section: {counter:section}
+:image-index: 0
+:table-index: 0
+.サンプル
+[caption="図{chapter}.{section}.{counter:index} "]
+image::http://placehold.it/350x150[代替テキスト]
+<<<
+include::chapter001.adoc[]
+<<<
+include::chapter002.adoc[]
+<<<
+include::chapter003.adoc[]
+<<<
+include::chapter004.adoc[]
+<<<
+include::chapter005.adoc[]
+<<<
+include::chapter006.adoc[]
+<<<
+include::chapter007.adoc[]
+<<<
+include::words.adoc[]
