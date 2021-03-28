@@ -436,69 +436,85 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article data-line-1">
+<body class="article toc2 toc-left data-line-1">
 <div id="header">
 <h1>Doctitle</h1>
 <div class="details">
-<span id="author" class="author">Pon P. Pon</span><br>
+<span id="author" class="author">author</span><br>
 <span id="revnumber">バージョン 1.0.0,</span>
 <span id="revdate">Jan 1, 2021</span>
 <br><span id="revremark">First Version</span>
 </div>
-<div id="toc" class="toc">
+<div id="toc" class="toc2">
 <div id="toctitle">目次</div>
 <ul class="sectlevel1">
-<li><a href="#_第一章">1. 第一章</a>
+<li><a href="#_gitってなに">1. Gitってなに？</a>
 <ul class="sectlevel2">
-<li><a href="#_第一節">1.1. 第一節</a></li>
+<li><a href="#_gitの歴史">1.1. Gitの歴史</a></li>
+<li><a href="#_githubってなに">1.2. GitHubってなに？</a></li>
+<li><a href="#_gitのインストール">1.3. Gitのインストール</a></li>
+<li><a href="#_githubへの登録">1.4. Githubへの登録</a></li>
+<li><a href="#_gitの初期設定">1.5. Gitの初期設定</a></li>
 </ul>
 </li>
-<li><a href="#_gitってなに">2. Gitってなに？</a>
+<li><a href="#_gitの仕組み">2. Gitの仕組み</a>
 <ul class="sectlevel2">
-<li><a href="#_gitの歴史">2.1. Gitの歴史</a></li>
-<li><a href="#_githubってなに">2.2. GitHubってなに？</a></li>
-<li><a href="#_gitのインストール">2.3. Gitのインストール</a></li>
-<li><a href="#_githubへの登録">2.4. Githubへの登録</a></li>
-<li><a href="#_gitの初期設定">2.5. Gitの初期設定</a></li>
+<li><a href="#_gitのメリット">2.1. Gitのメリット</a></li>
+<li><a href="#_gitの作業の流れ">2.2. Gitの作業の流れ</a></li>
+<li><a href="#_gitのデータ構造">2.3. Gitのデータ構造</a></li>
+<li><a href="#_新規でローカルリポジトリを作ろう">2.4. 新規でローカルリポジトリを作ろう</a></li>
+<li><a href="#_リモートリポジトリを元にローカルリポジトリを作ろう">2.5. リモートリポジトリを元にローカルリポジトリを作ろう</a></li>
+<li><a href="#_ファイルの変更をステージに追加しよう">2.6. ファイルの変更をステージに追加しよう</a></li>
+<li><a href="#_ファイルの変更を記録しよう">2.7. ファイルの変更を記録しよう</a></li>
+<li><a href="#_どのファイルが変更されたかを確認しよう">2.8. どのファイルが変更されたかを確認しよう</a></li>
+<li><a href="#_ファイルの変更内容を確認しよう">2.9. ファイルの変更内容を確認しよう</a></li>
+<li><a href="#_ファイルを削除しよう">2.10. ファイルを削除しよう</a></li>
+<li><a href="#_ファイルを移動またはリネームしよう">2.11. ファイルを移動（またはリネーム）しよう</a></li>
+<li><a href="#_ファイルをリモートリポジトリに記録しよう">2.12. ファイルをリモートリポジトリに記録しよう</a></li>
+<li><a href="#_コマンドにエイリアスをつけよう">2.13. コマンドにエイリアスをつけよう</a></li>
+<li><a href="#_バージョン管理しないファイルを無視しよう">2.14. バージョン管理しないファイルを無視しよう</a></li>
+<li><a href="#_ワークツリーのファイルの変更を元に戻そう">2.15. ワークツリーのファイルの変更を元に戻そう</a></li>
+<li><a href="#_ステージのファイルの変更を元に戻そう">2.16. ステージのファイルの変更を元に戻そう</a></li>
+<li><a href="#_直前のコミットをやり直そう">2.17. 直前のコミットをやり直そう</a></li>
+<li><a href="#_リモートリポジトリの情報を確認しよう">2.18. リモートリポジトリの情報を確認しよう</a></li>
+<li><a href="#_リモートリポジトリを登録しよう">2.19. リモートリポジトリを登録しよう</a></li>
+<li><a href="#_リモートリポジトリの変更を取得しよう1">2.20. リモートリポジトリの変更を取得しよう1</a></li>
+<li><a href="#_リモートリポジトリの変更を取得しよう2">2.21. リモートリポジトリの変更を取得しよう2</a></li>
+<li><a href="#_リモートリポジトリの詳細情報を確認しよう">2.22. リモートリポジトリの詳細情報を確認しよう</a></li>
+<li><a href="#_リモートリポジトリの情報を編集しよう">2.23. リモートリポジトリの情報を編集しよう</a></li>
 </ul>
 </li>
-<li><a href="#_gitの仕組み">3. Gitの仕組み</a>
+<li><a href="#_ブランチの仕組み">3. ブランチの仕組み</a>
 <ul class="sectlevel2">
-<li><a href="#_gitのメリット">3.1. Gitのメリット</a></li>
-<li><a href="#_gitの作業の流れ">3.2. Gitの作業の流れ</a></li>
-<li><a href="#_gitのデータ構造">3.3. Gitのデータ構造</a></li>
-<li><a href="#_新規でローカルリポジトリを作ろう">3.4. 新規でローカルリポジトリを作ろう</a></li>
-<li><a href="#_リモートリポジトリを元にローカルリポジトリを作ろう">3.5. リモートリポジトリを元にローカルリポジトリを作ろう</a></li>
-<li><a href="#_ファイルの変更をステージに追加しよう">3.6. ファイルの変更をステージに追加しよう</a></li>
-<li><a href="#_ファイルの変更を記録しよう">3.7. ファイルの変更を記録しよう</a></li>
-<li><a href="#_どのファイルが変更されたかを確認しよう">3.8. どのファイルが変更されたかを確認しよう</a></li>
-<li><a href="#_ファイルの変更内容を確認しよう">3.9. ファイルの変更内容を確認しよう</a></li>
-<li><a href="#_ファイルを削除しよう">3.10. ファイルを削除しよう</a></li>
-<li><a href="#_ファイルを移動またはリネームしよう">3.11. ファイルを移動（またはリネーム）しよう</a></li>
-<li><a href="#_ファイルをリモートリポジトリに記録しよう">3.12. ファイルをリモートリポジトリに記録しよう</a></li>
-<li><a href="#_コマンドにエイリアスをつけよう">3.13. コマンドにエイリアスをつけよう</a></li>
-<li><a href="#_バージョン管理しないファイルを無視しよう">3.14. バージョン管理しないファイルを無視しよう</a></li>
-<li><a href="#_ワークツリーのファイルの変更を元に戻そう">3.15. ワークツリーのファイルの変更を元に戻そう</a></li>
-<li><a href="#_ステージのファイルの変更を元に戻そう">3.16. ステージのファイルの変更を元に戻そう</a></li>
-<li><a href="#_直前のコミットをやり直そう">3.17. 直前のコミットをやり直そう</a></li>
-<li><a href="#_リモートリポジトリの情報を確認しよう">3.18. リモートリポジトリの情報を確認しよう</a></li>
-<li><a href="#_リモートリポジトリを登録しよう">3.19. リモートリポジトリを登録しよう</a></li>
-<li><a href="#_リモートリポジトリの変更を取得しよう1">3.20. リモートリポジトリの変更を取得しよう1</a></li>
-<li><a href="#_リモートリポジトリの変更を取得しよう2">3.21. リモートリポジトリの変更を取得しよう2</a></li>
-<li><a href="#_リモートリポジトリの詳細情報を確認しよう">3.22. リモートリポジトリの詳細情報を確認しよう</a></li>
-<li><a href="#_リモートリポジトリの情報を編集しよう">3.23. リモートリポジトリの情報を編集しよう</a></li>
+<li><a href="#_ブランチの考え方">3.1. ブランチの考え方</a></li>
+<li><a href="#_ブランチの情報を確認しよう新規でブランチを作成しよう">3.2. ブランチの情報を確認しよう&amp;新規でブランチを作成しよう</a></li>
+<li><a href="#_他のブランチの内容をマージしよう">3.3. 他のブランチの内容をマージしよう</a></li>
+<li><a href="#_コンフリクトを起こさないための運用心構え">3.4. コンフリクトを起こさないための運用・心構え</a></li>
+<li><a href="#_ブランチを編集削除しよう">3.5. ブランチを編集・削除しよう</a></li>
+<li><a href="#_開発とブランチの使い方">3.6. 開発とブランチの使い方</a></li>
+<li><a href="#_リモートブランチとは">3.7. リモートブランチとは</a></li>
+<li><a href="#_プルリクエストを利用しよう">3.8. プルリクエストを利用しよう</a></li>
 </ul>
 </li>
-<li><a href="#_ブランチの仕組み">4. ブランチの仕組み</a>
+<li><a href="#_コマンドリファレンス">4. コマンドリファレンス</a>
 <ul class="sectlevel2">
-<li><a href="#_ブランチの考え方">4.1. ブランチの考え方</a></li>
-<li><a href="#_ブランチの情報を確認しよう新規でブランチを作成しよう">4.2. ブランチの情報を確認しよう&amp;新規でブランチを作成しよう</a></li>
-<li><a href="#_他のブランチの内容をマージしよう">4.3. 他のブランチの内容をマージしよう</a></li>
-<li><a href="#_コンフリクトを起こさないための運用心構え">4.4. コンフリクトを起こさないための運用・心構え</a></li>
-<li><a href="#_ブランチを編集削除しよう">4.5. ブランチを編集・削除しよう</a></li>
-<li><a href="#_開発とブランチの使い方">4.6. 開発とブランチの使い方</a></li>
-<li><a href="#_リモートブランチとは">4.7. リモートブランチとは</a></li>
-<li><a href="#_プルリクエストを利用しよう">4.8. プルリクエストを利用しよう</a></li>
+<li><a href="#_マークについて">4.1. マークについて</a></li>
+<li><a href="#_init">4.2. <strong>init</strong></a></li>
+<li><a href="#_clone">4.3. <strong>clone</strong></a></li>
+<li><a href="#_add">4.4. <strong>add</strong></a></li>
+<li><a href="#_commit">4.5. <strong>commit</strong></a></li>
+<li><a href="#_status">4.6. <strong>status</strong></a></li>
+<li><a href="#_diff">4.7. <strong>diff</strong></a></li>
+<li><a href="#_log">4.8. <strong>log</strong></a></li>
+<li><a href="#_rm">4.9. <strong>rm</strong></a></li>
+<li><a href="#_mv">4.10. <strong>mv</strong></a></li>
+<li><a href="#_remote_add">4.11. <strong>remote add</strong></a></li>
+<li><a href="#_push">4.12. <strong>push</strong></a></li>
+<li><a href="#_config">4.13. <strong>config</strong></a></li>
+<li><a href="#_checkout">4.14. <strong>checkout</strong></a></li>
+<li><a href="#_reset">4.15. <strong>reset</strong></a></li>
+<li><a href="#_commit_amend">4.16. <strong>commit --amend</strong></a></li>
+<li><a href="#_remote">4.17. <strong>remote</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -510,23 +526,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect1 data-line-140">
-<h2 id="_第一章"><a class="anchor" href="#_第一章"></a><a class="link" href="#_第一章">1. 第一章</a></h2>
-<div class="sectionbody">
-<div class="sect2 data-line-142">
-<h3 id="_第一節"><a class="anchor" href="#_第一節"></a><a class="link" href="#_第一節">1.1. 第一節</a></h3>
-<div class="imageblock data-line-148">
-<div class="content">
-<img src="http://placehold.it/350x150" alt="代替テキスト">
-</div>
-<div class="title">図1.1.1 サンプル</div>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
 <div class="sect1 data-line-1">
-<h2 id="_gitってなに"><a class="anchor" href="#_gitってなに"></a><a class="link" href="#_gitってなに">2. Gitってなに？</a></h2>
+<h2 id="_gitってなに"><a class="anchor" href="#_gitってなに"></a><a class="link" href="#_gitってなに">1. Gitってなに？</a></h2>
 <div class="sectionbody">
 <div class="paragraph data-line-4">
 <p>ファイルのバージョン管理するソフトウェア。</p>
@@ -548,7 +549,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="sect2 data-line-11">
-<h3 id="_gitの歴史"><a class="anchor" href="#_gitの歴史"></a><a class="link" href="#_gitの歴史">2.1. Gitの歴史</a></h3>
+<h3 id="_gitの歴史"><a class="anchor" href="#_gitの歴史"></a><a class="link" href="#_gitの歴史">1.1. Gitの歴史</a></h3>
 <div class="paragraph data-line-16">
 <p>リーナス・トーバルズがLinuxのカーネル開発で使用されていたバージョン管理システムのライセンス変更に伴い、次期バージョン管理システムを検討し始めたが、高度な要求水準を満たすものがなかった。</p>
 </div>
@@ -573,7 +574,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2 data-line-25">
-<h3 id="_githubってなに"><a class="anchor" href="#_githubってなに"></a><a class="link" href="#_githubってなに">2.2. GitHubってなに？</a></h3>
+<h3 id="_githubってなに"><a class="anchor" href="#_githubってなに"></a><a class="link" href="#_githubってなに">1.2. GitHubってなに？</a></h3>
 <div class="paragraph data-line-30">
 <p>クリス・ワンストラスが創業者のサービス。コード（Gitリポジトリ）のホスティングサービス。</p>
 </div>
@@ -604,15 +605,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
-<div class="paragraph data-line-150">
+<div class="paragraph data-line-48">
 <p>他にもBitbucketなどのホスティングサービスもある。
 &lt;&lt;&lt;
 == Git環境構築
-:chapter: 3</p>
+:chapter: 2</p>
 </div>
 </div>
 <div class="sect2 data-line-4">
-<h3 id="_gitのインストール"><a class="anchor" href="#_gitのインストール"></a><a class="link" href="#_gitのインストール">2.3. Gitのインストール</a></h3>
+<h3 id="_gitのインストール"><a class="anchor" href="#_gitのインストール"></a><a class="link" href="#_gitのインストール">1.3. Gitのインストール</a></h3>
 <div class="olist arabic data-line-9">
 <ol class="arabic">
 <li class="data-line-9">
@@ -639,7 +640,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2 data-line-25">
-<h3 id="_githubへの登録"><a class="anchor" href="#_githubへの登録"></a><a class="link" href="#_githubへの登録">2.4. Githubへの登録</a></h3>
+<h3 id="_githubへの登録"><a class="anchor" href="#_githubへの登録"></a><a class="link" href="#_githubへの登録">1.4. Githubへの登録</a></h3>
 <div class="olist arabic data-line-30">
 <ol class="arabic">
 <li class="data-line-30">
@@ -658,7 +659,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2 data-line-38">
-<h3 id="_gitの初期設定"><a class="anchor" href="#_gitの初期設定"></a><a class="link" href="#_gitの初期設定">2.5. Gitの初期設定</a></h3>
+<h3 id="_gitの初期設定"><a class="anchor" href="#_gitの初期設定"></a><a class="link" href="#_gitの初期設定">1.5. Gitの初期設定</a></h3>
 <div class="olist arabic data-line-43">
 <ol class="arabic">
 <li class="data-line-43">
@@ -736,10 +737,10 @@ git config --list //<b class="conum">(4)</b></code></pre>
 </div>
 </div>
 <div class="sect1 data-line-1">
-<h2 id="_gitの仕組み"><a class="anchor" href="#_gitの仕組み"></a><a class="link" href="#_gitの仕組み">3. Gitの仕組み</a></h2>
+<h2 id="_gitの仕組み"><a class="anchor" href="#_gitの仕組み"></a><a class="link" href="#_gitの仕組み">2. Gitの仕組み</a></h2>
 <div class="sectionbody">
 <div class="sect2 data-line-4">
-<h3 id="_gitのメリット"><a class="anchor" href="#_gitのメリット"></a><a class="link" href="#_gitのメリット">3.1. Gitのメリット</a></h3>
+<h3 id="_gitのメリット"><a class="anchor" href="#_gitのメリット"></a><a class="link" href="#_gitのメリット">2.1. Gitのメリット</a></h3>
 <div class="paragraph data-line-9">
 <p><em>Q.Gitのバージョン管理ではスナップショットで保存しているか？それとも差分で保存しているか？</em></p>
 </div>
@@ -754,7 +755,7 @@ git config --list //<b class="conum">(4)</b></code></pre>
 </div>
 </div>
 <div class="sect2 data-line-17">
-<h3 id="_gitの作業の流れ"><a class="anchor" href="#_gitの作業の流れ"></a><a class="link" href="#_gitの作業の流れ">3.2. Gitの作業の流れ</a></h3>
+<h3 id="_gitの作業の流れ"><a class="anchor" href="#_gitの作業の流れ"></a><a class="link" href="#_gitの作業の流れ">2.2. Gitの作業の流れ</a></h3>
 <div class="olist arabic data-line-22">
 <ol class="arabic">
 <li class="data-line-22">
@@ -782,7 +783,7 @@ git config --list //<b class="conum">(4)</b></code></pre>
 </div>
 </div>
 <div class="sect2 data-line-31">
-<h3 id="_gitのデータ構造"><a class="anchor" href="#_gitのデータ構造"></a><a class="link" href="#_gitのデータ構造">3.3. Gitのデータ構造</a></h3>
+<h3 id="_gitのデータ構造"><a class="anchor" href="#_gitのデータ構造"></a><a class="link" href="#_gitのデータ構造">2.3. Gitのデータ構造</a></h3>
 <div class="ulist data-line-36">
 <ul>
 <li class="data-line-36">
@@ -795,13 +796,13 @@ git config --list //<b class="conum">(4)</b></code></pre>
 <p><strong>Git</strong>とは<strong>「データを圧縮して、スナップショットとして保存、ツリーとコミットによって、時系列の依存関係を保存し、バージョン管理をしているアプリケーション」</strong>
 &lt;&lt;&lt;
 == Gitの基本
-:chapter: 4</p>
+:chapter: 3</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2 data-line-4">
-<h3 id="_新規でローカルリポジトリを作ろう"><a class="anchor" href="#_新規でローカルリポジトリを作ろう"></a><a class="link" href="#_新規でローカルリポジトリを作ろう">3.4. 新規でローカルリポジトリを作ろう</a></h3>
+<h3 id="_新規でローカルリポジトリを作ろう"><a class="anchor" href="#_新規でローカルリポジトリを作ろう"></a><a class="link" href="#_新規でローカルリポジトリを作ろう">2.4. 新規でローカルリポジトリを作ろう</a></h3>
 <div class="olist arabic data-line-6">
 <ol class="arabic">
 <li class="data-line-6">
@@ -828,7 +829,7 @@ cd [ディレクトリ名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-25">
-<h3 id="_リモートリポジトリを元にローカルリポジトリを作ろう"><a class="anchor" href="#_リモートリポジトリを元にローカルリポジトリを作ろう"></a><a class="link" href="#_リモートリポジトリを元にローカルリポジトリを作ろう">3.5. リモートリポジトリを元にローカルリポジトリを作ろう</a></h3>
+<h3 id="_リモートリポジトリを元にローカルリポジトリを作ろう"><a class="anchor" href="#_リモートリポジトリを元にローカルリポジトリを作ろう"></a><a class="link" href="#_リモートリポジトリを元にローカルリポジトリを作ろう">2.5. リモートリポジトリを元にローカルリポジトリを作ろう</a></h3>
 <div class="olist arabic data-line-27">
 <ol class="arabic">
 <li class="data-line-27">
@@ -857,7 +858,7 @@ cd [ディレクトリ名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-47">
-<h3 id="_ファイルの変更をステージに追加しよう"><a class="anchor" href="#_ファイルの変更をステージに追加しよう"></a><a class="link" href="#_ファイルの変更をステージに追加しよう">3.6. ファイルの変更をステージに追加しよう</a></h3>
+<h3 id="_ファイルの変更をステージに追加しよう"><a class="anchor" href="#_ファイルの変更をステージに追加しよう"></a><a class="link" href="#_ファイルの変更をステージに追加しよう">2.6. ファイルの変更をステージに追加しよう</a></h3>
 <div class="paragraph data-line-49">
 <p><strong><em>Q . なぜステージ領域を使いますか？</em></strong></p>
 </div>
@@ -885,7 +886,7 @@ cd [ディレクトリ名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-69">
-<h3 id="_ファイルの変更を記録しよう"><a class="anchor" href="#_ファイルの変更を記録しよう"></a><a class="link" href="#_ファイルの変更を記録しよう">3.7. ファイルの変更を記録しよう</a></h3>
+<h3 id="_ファイルの変更を記録しよう"><a class="anchor" href="#_ファイルの変更を記録しよう"></a><a class="link" href="#_ファイルの変更を記録しよう">2.7. ファイルの変更を記録しよう</a></h3>
 <div class="olist arabic data-line-71">
 <ol class="arabic">
 <li class="data-line-71">
@@ -910,7 +911,7 @@ cd [ディレクトリ名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-86">
-<h3 id="_どのファイルが変更されたかを確認しよう"><a class="anchor" href="#_どのファイルが変更されたかを確認しよう"></a><a class="link" href="#_どのファイルが変更されたかを確認しよう">3.8. どのファイルが変更されたかを確認しよう</a></h3>
+<h3 id="_どのファイルが変更されたかを確認しよう"><a class="anchor" href="#_どのファイルが変更されたかを確認しよう"></a><a class="link" href="#_どのファイルが変更されたかを確認しよう">2.8. どのファイルが変更されたかを確認しよう</a></h3>
 <div class="olist arabic data-line-88">
 <ol class="arabic">
 <li class="data-line-88">
@@ -928,7 +929,7 @@ cd [ディレクトリ名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-98">
-<h3 id="_ファイルの変更内容を確認しよう"><a class="anchor" href="#_ファイルの変更内容を確認しよう"></a><a class="link" href="#_ファイルの変更内容を確認しよう">3.9. ファイルの変更内容を確認しよう</a></h3>
+<h3 id="_ファイルの変更内容を確認しよう"><a class="anchor" href="#_ファイルの変更内容を確認しよう"></a><a class="link" href="#_ファイルの変更内容を確認しよう">2.9. ファイルの変更内容を確認しよう</a></h3>
 <div class="olist arabic data-line-100">
 <ol class="arabic">
 <li class="data-line-100">
@@ -953,7 +954,7 @@ cd [ディレクトリ名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-118">
-<h3 id="_ファイルを削除しよう"><a class="anchor" href="#_ファイルを削除しよう"></a><a class="link" href="#_ファイルを削除しよう">3.10. ファイルを削除しよう</a></h3>
+<h3 id="_ファイルを削除しよう"><a class="anchor" href="#_ファイルを削除しよう"></a><a class="link" href="#_ファイルを削除しよう">2.10. ファイルを削除しよう</a></h3>
 <div class="olist arabic data-line-120">
 <ol class="arabic">
 <li class="data-line-120">
@@ -979,7 +980,7 @@ git rm [ディレクトリ名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-139">
-<h3 id="_ファイルを移動またはリネームしよう"><a class="anchor" href="#_ファイルを移動またはリネームしよう"></a><a class="link" href="#_ファイルを移動またはリネームしよう">3.11. ファイルを移動（またはリネーム）しよう</a></h3>
+<h3 id="_ファイルを移動またはリネームしよう"><a class="anchor" href="#_ファイルを移動またはリネームしよう"></a><a class="link" href="#_ファイルを移動またはリネームしよう">2.11. ファイルを移動（またはリネーム）しよう</a></h3>
 <div class="olist arabic data-line-141">
 <ol class="arabic">
 <li class="data-line-141">
@@ -1007,7 +1008,7 @@ git add [新ファイル名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-160">
-<h3 id="_ファイルをリモートリポジトリに記録しよう"><a class="anchor" href="#_ファイルをリモートリポジトリに記録しよう"></a><a class="link" href="#_ファイルをリモートリポジトリに記録しよう">3.12. ファイルをリモートリポジトリに記録しよう</a></h3>
+<h3 id="_ファイルをリモートリポジトリに記録しよう"><a class="anchor" href="#_ファイルをリモートリポジトリに記録しよう"></a><a class="link" href="#_ファイルをリモートリポジトリに記録しよう">2.12. ファイルをリモートリポジトリに記録しよう</a></h3>
 <div class="olist arabic data-line-162">
 <ol class="arabic">
 <li class="data-line-162">
@@ -1061,7 +1062,7 @@ git add [新ファイル名]</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-191">
-<h3 id="_コマンドにエイリアスをつけよう"><a class="anchor" href="#_コマンドにエイリアスをつけよう"></a><a class="link" href="#_コマンドにエイリアスをつけよう">3.13. コマンドにエイリアスをつけよう</a></h3>
+<h3 id="_コマンドにエイリアスをつけよう"><a class="anchor" href="#_コマンドにエイリアスをつけよう"></a><a class="link" href="#_コマンドにエイリアスをつけよう">2.13. コマンドにエイリアスをつけよう</a></h3>
 <div class="olist arabic data-line-193">
 <ol class="arabic">
 <li class="data-line-193">
@@ -1084,7 +1085,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-210">
-<h3 id="_バージョン管理しないファイルを無視しよう"><a class="anchor" href="#_バージョン管理しないファイルを無視しよう"></a><a class="link" href="#_バージョン管理しないファイルを無視しよう">3.14. バージョン管理しないファイルを無視しよう</a></h3>
+<h3 id="_バージョン管理しないファイルを無視しよう"><a class="anchor" href="#_バージョン管理しないファイルを無視しよう"></a><a class="link" href="#_バージョン管理しないファイルを無視しよう">2.14. バージョン管理しないファイルを無視しよう</a></h3>
 <div class="paragraph data-line-212">
 <p><strong><em>Q . どんなファイルはバージョン管理しない？</em></strong></p>
 </div>
@@ -1101,7 +1102,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-219">
-<h3 id="_ワークツリーのファイルの変更を元に戻そう"><a class="anchor" href="#_ワークツリーのファイルの変更を元に戻そう"></a><a class="link" href="#_ワークツリーのファイルの変更を元に戻そう">3.15. ワークツリーのファイルの変更を元に戻そう</a></h3>
+<h3 id="_ワークツリーのファイルの変更を元に戻そう"><a class="anchor" href="#_ワークツリーのファイルの変更を元に戻そう"></a><a class="link" href="#_ワークツリーのファイルの変更を元に戻そう">2.15. ワークツリーのファイルの変更を元に戻そう</a></h3>
 <div class="olist arabic data-line-221">
 <ol class="arabic">
 <li class="data-line-221">
@@ -1126,7 +1127,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-239">
-<h3 id="_ステージのファイルの変更を元に戻そう"><a class="anchor" href="#_ステージのファイルの変更を元に戻そう"></a><a class="link" href="#_ステージのファイルの変更を元に戻そう">3.16. ステージのファイルの変更を元に戻そう</a></h3>
+<h3 id="_ステージのファイルの変更を元に戻そう"><a class="anchor" href="#_ステージのファイルの変更を元に戻そう"></a><a class="link" href="#_ステージのファイルの変更を元に戻そう">2.16. ステージのファイルの変更を元に戻そう</a></h3>
 <div class="olist arabic data-line-241">
 <ol class="arabic">
 <li class="data-line-241">
@@ -1165,7 +1166,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-264">
-<h3 id="_直前のコミットをやり直そう"><a class="anchor" href="#_直前のコミットをやり直そう"></a><a class="link" href="#_直前のコミットをやり直そう">3.17. 直前のコミットをやり直そう</a></h3>
+<h3 id="_直前のコミットをやり直そう"><a class="anchor" href="#_直前のコミットをやり直そう"></a><a class="link" href="#_直前のコミットをやり直そう">2.17. 直前のコミットをやり直そう</a></h3>
 <div class="olist arabic data-line-266">
 <ol class="arabic">
 <li class="data-line-266">
@@ -1197,7 +1198,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-281">
-<h3 id="_リモートリポジトリの情報を確認しよう"><a class="anchor" href="#_リモートリポジトリの情報を確認しよう"></a><a class="link" href="#_リモートリポジトリの情報を確認しよう">3.18. リモートリポジトリの情報を確認しよう</a></h3>
+<h3 id="_リモートリポジトリの情報を確認しよう"><a class="anchor" href="#_リモートリポジトリの情報を確認しよう"></a><a class="link" href="#_リモートリポジトリの情報を確認しよう">2.18. リモートリポジトリの情報を確認しよう</a></h3>
 <div class="olist arabic data-line-283">
 <ol class="arabic">
 <li class="data-line-283">
@@ -1222,7 +1223,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-301">
-<h3 id="_リモートリポジトリを登録しよう"><a class="anchor" href="#_リモートリポジトリを登録しよう"></a><a class="link" href="#_リモートリポジトリを登録しよう">3.19. リモートリポジトリを登録しよう</a></h3>
+<h3 id="_リモートリポジトリを登録しよう"><a class="anchor" href="#_リモートリポジトリを登録しよう"></a><a class="link" href="#_リモートリポジトリを登録しよう">2.19. リモートリポジトリを登録しよう</a></h3>
 <div class="olist arabic data-line-303">
 <ol class="arabic">
 <li class="data-line-303">
@@ -1238,7 +1239,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-312">
-<h3 id="_リモートリポジトリの変更を取得しよう1"><a class="anchor" href="#_リモートリポジトリの変更を取得しよう1"></a><a class="link" href="#_リモートリポジトリの変更を取得しよう1">3.20. リモートリポジトリの変更を取得しよう1</a></h3>
+<h3 id="_リモートリポジトリの変更を取得しよう1"><a class="anchor" href="#_リモートリポジトリの変更を取得しよう1"></a><a class="link" href="#_リモートリポジトリの変更を取得しよう1">2.20. リモートリポジトリの変更を取得しよう1</a></h3>
 <div class="olist arabic data-line-314">
 <ol class="arabic">
 <li class="data-line-314">
@@ -1266,7 +1267,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-334">
-<h3 id="_リモートリポジトリの変更を取得しよう2"><a class="anchor" href="#_リモートリポジトリの変更を取得しよう2"></a><a class="link" href="#_リモートリポジトリの変更を取得しよう2">3.21. リモートリポジトリの変更を取得しよう2</a></h3>
+<h3 id="_リモートリポジトリの変更を取得しよう2"><a class="anchor" href="#_リモートリポジトリの変更を取得しよう2"></a><a class="link" href="#_リモートリポジトリの変更を取得しよう2">2.21. リモートリポジトリの変更を取得しよう2</a></h3>
 <div class="olist arabic data-line-336">
 <ol class="arabic">
 <li class="data-line-336">
@@ -1300,7 +1301,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-353">
-<h3 id="_リモートリポジトリの詳細情報を確認しよう"><a class="anchor" href="#_リモートリポジトリの詳細情報を確認しよう"></a><a class="link" href="#_リモートリポジトリの詳細情報を確認しよう">3.22. リモートリポジトリの詳細情報を確認しよう</a></h3>
+<h3 id="_リモートリポジトリの詳細情報を確認しよう"><a class="anchor" href="#_リモートリポジトリの詳細情報を確認しよう"></a><a class="link" href="#_リモートリポジトリの詳細情報を確認しよう">2.22. リモートリポジトリの詳細情報を確認しよう</a></h3>
 <div class="olist arabic data-line-355">
 <ol class="arabic">
 <li class="data-line-355">
@@ -1319,7 +1320,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect2 data-line-367">
-<h3 id="_リモートリポジトリの情報を編集しよう"><a class="anchor" href="#_リモートリポジトリの情報を編集しよう"></a><a class="link" href="#_リモートリポジトリの情報を編集しよう">3.23. リモートリポジトリの情報を編集しよう</a></h3>
+<h3 id="_リモートリポジトリの情報を編集しよう"><a class="anchor" href="#_リモートリポジトリの情報を編集しよう"></a><a class="link" href="#_リモートリポジトリの情報を編集しよう">2.23. リモートリポジトリの情報を編集しよう</a></h3>
 <div class="olist arabic data-line-369">
 <ol class="arabic">
 <li class="data-line-369">
@@ -1345,7 +1346,7 @@ git config --global alias.co checkout</code></pre>
 </div>
 </div>
 <div class="sect1 data-line-1">
-<h2 id="_ブランチの仕組み"><a class="anchor" href="#_ブランチの仕組み"></a><a class="link" href="#_ブランチの仕組み">4. ブランチの仕組み</a></h2>
+<h2 id="_ブランチの仕組み"><a class="anchor" href="#_ブランチの仕組み"></a><a class="link" href="#_ブランチの仕組み">3. ブランチの仕組み</a></h2>
 <div class="sectionbody">
 <div class="paragraph data-line-4">
 <p><strong>ブランチ</strong> とは、<strong>並行して複数機能を開発するため</strong> にある仕組み。</p>
@@ -1357,20 +1358,20 @@ git config --global alias.co checkout</code></pre>
 <p>A.ブランチを分岐させることで、自分の変更内容を周りに影響させず、逆に回りの変更内容を自分の変更に影響させずに開発をすすめることができる</p>
 </div>
 <div class="sect2 data-line-10">
-<h3 id="_ブランチの考え方"><a class="anchor" href="#_ブランチの考え方"></a><a class="link" href="#_ブランチの考え方">4.1. ブランチの考え方</a></h3>
+<h3 id="_ブランチの考え方"><a class="anchor" href="#_ブランチの考え方"></a><a class="link" href="#_ブランチの考え方">3.1. ブランチの考え方</a></h3>
 <div class="paragraph data-line-12">
 <p>ブランチはあくまで <strong>コミット(コミットID)を指し示すポインタ</strong>。コミットすると基本的には自分が作業しているブランチ（=HEAD）の指し示すコミットが新しいコミットに移動する。<br>
 HEADは <strong>ブランチをを指し示すポインタ</strong>。
 ブランチの情報は「.git」ディレクトリ配下に保存されている。</p>
 </div>
-<div class="paragraph data-line-158">
+<div class="paragraph data-line-56">
 <p>Gitにおいて、ブランチの作成や切り替えが単なるポインタの切り替えで済むため、非常に高速に処理できるのが、他のバージョン管理システムとの大きな特徴。
 &lt;&lt;&lt;
 == Gitでブランチを利用する</p>
 </div>
 </div>
 <div class="sect2 data-line-3">
-<h3 id="_ブランチの情報を確認しよう新規でブランチを作成しよう"><a class="anchor" href="#_ブランチの情報を確認しよう新規でブランチを作成しよう"></a><a class="link" href="#_ブランチの情報を確認しよう新規でブランチを作成しよう">4.2. ブランチの情報を確認しよう&amp;新規でブランチを作成しよう</a></h3>
+<h3 id="_ブランチの情報を確認しよう新規でブランチを作成しよう"><a class="anchor" href="#_ブランチの情報を確認しよう新規でブランチを作成しよう"></a><a class="link" href="#_ブランチの情報を確認しよう新規でブランチを作成しよう">3.2. ブランチの情報を確認しよう&amp;新規でブランチを作成しよう</a></h3>
 <div id="app-listing" class="listingblock data-line-7">
 <div class="content">
 <pre class="highlight"><code class="language-git" data-lang="git">git branch</code></pre>
@@ -1400,7 +1401,7 @@ HEADは <strong>ブランチをを指し示すポインタ</strong>。
 </div>
 </div>
 <div class="sect2 data-line-25">
-<h3 id="_他のブランチの内容をマージしよう"><a class="anchor" href="#_他のブランチの内容をマージしよう"></a><a class="link" href="#_他のブランチの内容をマージしよう">4.3. 他のブランチの内容をマージしよう</a></h3>
+<h3 id="_他のブランチの内容をマージしよう"><a class="anchor" href="#_他のブランチの内容をマージしよう"></a><a class="link" href="#_他のブランチの内容をマージしよう">3.3. 他のブランチの内容をマージしよう</a></h3>
 <div class="olist arabic data-line-27">
 <ol class="arabic">
 <li class="data-line-27">
@@ -1415,7 +1416,7 @@ HEADは <strong>ブランチをを指し示すポインタ</strong>。
 </div>
 </div>
 <div class="sect2 data-line-35">
-<h3 id="_コンフリクトを起こさないための運用心構え"><a class="anchor" href="#_コンフリクトを起こさないための運用心構え"></a><a class="link" href="#_コンフリクトを起こさないための運用心構え">4.4. コンフリクトを起こさないための運用・心構え</a></h3>
+<h3 id="_コンフリクトを起こさないための運用心構え"><a class="anchor" href="#_コンフリクトを起こさないための運用心構え"></a><a class="link" href="#_コンフリクトを起こさないための運用心構え">3.4. コンフリクトを起こさないための運用・心構え</a></h3>
 <div class="ulist data-line-37">
 <ul>
 <li class="data-line-37">
@@ -1434,7 +1435,7 @@ HEADは <strong>ブランチをを指し示すポインタ</strong>。
 </div>
 </div>
 <div class="sect2 data-line-42">
-<h3 id="_ブランチを編集削除しよう"><a class="anchor" href="#_ブランチを編集削除しよう"></a><a class="link" href="#_ブランチを編集削除しよう">4.5. ブランチを編集・削除しよう</a></h3>
+<h3 id="_ブランチを編集削除しよう"><a class="anchor" href="#_ブランチを編集削除しよう"></a><a class="link" href="#_ブランチを編集削除しよう">3.5. ブランチを編集・削除しよう</a></h3>
 <div class="olist arabic data-line-44">
 <ol class="arabic">
 <li class="data-line-44">
@@ -1462,7 +1463,7 @@ HEADは <strong>ブランチをを指し示すポインタ</strong>。
 </div>
 </div>
 <div class="sect2 data-line-67">
-<h3 id="_開発とブランチの使い方"><a class="anchor" href="#_開発とブランチの使い方"></a><a class="link" href="#_開発とブランチの使い方">4.6. 開発とブランチの使い方</a></h3>
+<h3 id="_開発とブランチの使い方"><a class="anchor" href="#_開発とブランチの使い方"></a><a class="link" href="#_開発とブランチの使い方">3.6. 開発とブランチの使い方</a></h3>
 <div class="ulist data-line-69">
 <ul>
 <li class="data-line-69">
@@ -1472,7 +1473,7 @@ HEADは <strong>ブランチをを指し示すポインタ</strong>。
 </div>
 </div>
 <div class="sect2 data-line-71">
-<h3 id="_リモートブランチとは"><a class="anchor" href="#_リモートブランチとは"></a><a class="link" href="#_リモートブランチとは">4.7. リモートブランチとは</a></h3>
+<h3 id="_リモートブランチとは"><a class="anchor" href="#_リモートブランチとは"></a><a class="link" href="#_リモートブランチとは">3.7. リモートブランチとは</a></h3>
 <div class="ulist data-line-73">
 <ul>
 <li class="data-line-73">
@@ -1485,50 +1486,45 @@ HEADは <strong>ブランチをを指し示すポインタ</strong>。
 </div>
 </div>
 <div class="sect2 data-line-3">
-<h3 id="_プルリクエストを利用しよう"><a class="anchor" href="#_プルリクエストを利用しよう"></a><a class="link" href="#_プルリクエストを利用しよう">4.8. プルリクエストを利用しよう</a></h3>
-<div class="paragraph data-line-162">
+<h3 id="_プルリクエストを利用しよう"><a class="anchor" href="#_プルリクエストを利用しよう"></a><a class="link" href="#_プルリクエストを利用しよう">3.8. プルリクエストを利用しよう</a></h3>
+<div class="paragraph data-line-60">
 <p>プルリクエスト：自分の変更したコードをリポジトリに取り込んでもらえる機能
 &lt;&lt;&lt;
 == 用語集</p>
 </div>
 <div class="dlist data-line-3">
 <dl>
-<dt class="hdlist1">IT関連</dt>
-<dt class="hdlist1">Git関連</dt>
-<dd>
-<div class="dlist data-line-6">
-<dl>
 <dt class="hdlist1">用語</dt>
 <dd>
-<div class="ulist data-line-7">
+<div class="ulist data-line-4">
 <ul>
-<li class="data-line-7">
+<li class="data-line-4">
 <p><strong>ワークツリー</strong><br></p>
 </li>
-<li class="data-line-9">
+<li class="data-line-6">
 <p><strong>ステージ</strong><br></p>
 </li>
-<li class="data-line-11">
+<li class="data-line-8">
 <p><strong>ローカルリポジトリ</strong><br></p>
 </li>
-<li class="data-line-13">
+<li class="data-line-10">
 <p><strong>リモートリポジトリ</strong><br></p>
 </li>
-<li class="data-line-15">
+<li class="data-line-12">
 <p><strong>Git Object</strong><br>
 「.git/objects」配下に保存されるgitデータ</p>
-<div class="ulist data-line-17">
+<div class="ulist data-line-14">
 <ul>
-<li class="data-line-17">
+<li class="data-line-14">
 <p><strong>Blob Object</strong><br>
 ファイルをハッシュ関数で40文字の英数字に変換したもの</p>
 </li>
-<li class="data-line-19">
+<li class="data-line-16">
 <p><strong>Tree Object</strong><br>
 Blob ObjectまたはTree Objectとファイル名を紐付けたもの<br>
 ディレクトリ階層がある場合、子ディレクトリのTree Objectは親ディレクトリのTree Object内に含まれる</p>
 </li>
-<li class="data-line-22">
+<li class="data-line-19">
 <p><strong>Commit Object</strong><br>
 コミットした時点でのファイルとその構成、状態を示したもの<br>
 最上位のTree Object、親Commit Object、変更者情報、変更コメントが記載される</p>
@@ -1541,17 +1537,17 @@ Blob ObjectまたはTree Objectとファイル名を紐付けたもの<br>
 </dd>
 <dt class="hdlist1">コマンド</dt>
 <dd>
-<div class="ulist data-line-27">
+<div class="ulist data-line-24">
 <ul>
-<li class="data-line-27">
+<li class="data-line-24">
 <p><strong>git config</strong><br>
 aaaaaa</p>
 </li>
-<li class="data-line-29">
+<li class="data-line-26">
 <p><strong>git add</strong><br>
 aaaaaa</p>
 </li>
-<li class="data-line-31">
+<li class="data-line-28">
 <p><strong>git commit</strong><br></p>
 </li>
 </ul>
@@ -1559,17 +1555,677 @@ aaaaaa</p>
 </dd>
 </dl>
 </div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1 data-line-1">
+<h2 id="_コマンドリファレンス"><a class="anchor" href="#_コマンドリファレンス"></a><a class="link" href="#_コマンドリファレンス">4. コマンドリファレンス</a></h2>
+<div class="sectionbody">
+<div class="sect2 data-line-3">
+<h3 id="_マークについて"><a class="anchor" href="#_マークについて"></a><a class="link" href="#_マークについて">4.1. マークについて</a></h3>
+<div class="dlist data-line-4">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>コマンドの機能概要を記載しています。</p>
+</dd>
+<dt class="hdlist1">[適用機種]</dt>
+<dd>
+<p>対象となる装置種別を記載しています。</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<p>入力形式を記載しています。以下の規約に従って記載しています。<br>
+&lt;&gt;：パラメタ名称を示しています。<br>
+[]：括弧内のオプションやパラメタを省略できることを示しています。<br>
+{}：括弧内のオプションやパラメタのうち、どれかを選択することを示しています。</p>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<p>各オプションやパラメタの意味を記載しています。</p>
+</dd>
+<dt class="hdlist1">[動作モード]</dt>
+<dd>
+<p>コマンドを実行可能な動作モードを記載しています。</p>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>コマンドの解説を記載しています。</p>
+</dd>
+<dt class="hdlist1">[注意]</dt>
+<dd>
+<p>コマンドの注意事項を記載しています。</p>
+</dd>
+<dt class="hdlist1">[メッセージ]</dt>
+<dd>
+<p>コマンドの応答またはエラーメッセージを記載しています。</p>
+</dd>
+<dt class="hdlist1">[初期値]</dt>
+<dd>
+<p>コマンドの初期値を記載しています。</p>
+</dd>
+<dt class="hdlist1">[実行例]</dt>
+<dd>
+<p>コマンドの実行例を記載しています。</p>
+</dd>
+<dt class="hdlist1">[未設定時]</dt>
+<dd>
+<p>コマンドの未設定時について説明し、設定したとみなされるコマンドを記載しています。</p>
 </dd>
 </dl>
 </div>
 </div>
+<div class="sect2 data-line-19">
+<h3 id="_init"><a class="anchor" href="#_init"></a><a class="link" href="#_init">4.2. <strong>init</strong></a></h3>
+<div class="dlist data-line-20">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ローカルリポジトリを作成する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-26">
+<div class="content">
+<pre class="highlight"><code>git init</code></pre>
 </div>
 </div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<p>なし</p>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>カレントディレクトリに「.git/」ディレクトリと各種git設定ファイルを生成する</p>
+</dd>
+</dl>
 </div>
-<div id="footer">
-<div id="footer-text">
-バージョン 1.0.0<br>
-最終更新 2021-01-24 22:02:44 +0900
+</div>
+<div class="sect2 data-line-36">
+<h3 id="_clone"><a class="anchor" href="#_clone"></a><a class="link" href="#_clone">4.3. <strong>clone</strong></a></h3>
+<div class="dlist data-line-37">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>Gitリポジトリのコピーを作成する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-43">
+<div class="content">
+<pre class="highlight"><code>git clone &lt;RepositoryAddress&gt;</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-48">
+<dl>
+<dt class="hdlist1"><em>RepositoryAddress</em></dt>
+<dd>
+<p>参照するGitリポジトリのアドレスを入力する</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-54">
+<h3 id="_add"><a class="anchor" href="#_add"></a><a class="link" href="#_add">4.4. <strong>add</strong></a></h3>
+<div class="dlist data-line-55">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ステージに変更を追加する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-61">
+<div class="content">
+<pre class="highlight"><code>git add &lt;Target&gt;</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-66">
+<dl>
+<dt class="hdlist1"><em>Target</em></dt>
+<dd>
+<div class="ulist data-line-67">
+<ul>
+<li class="data-line-67">
+<p>ファイル名、ディレクトリ名を指定<br></p>
+</li>
+<li class="data-line-68">
+<p>. (ピリオド)<br>
+すべての変更をステージに追加する</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-74">
+<h3 id="_commit"><a class="anchor" href="#_commit"></a><a class="link" href="#_commit">4.5. <strong>commit</strong></a></h3>
+<div class="dlist data-line-75">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ローカルリポジトリに変更を追加する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-81">
+<div class="content">
+<pre class="highlight"><code>git commit [-m "Massage"] [-v]</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-86">
+<dl>
+<dt class="hdlist1">-m "<em>Message</em>"</dt>
+<dd>
+<div class="ulist data-line-88">
+<ul>
+<li class="data-line-88">
+<p>コミットメッセージを指定する</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">-v</dt>
+<dd>
+<div class="ulist data-line-91">
+<ul>
+<li class="data-line-91">
+<p>実行中の内容を表示する</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-96">
+<h3 id="_status"><a class="anchor" href="#_status"></a><a class="link" href="#_status">4.6. <strong>status</strong></a></h3>
+<div class="dlist data-line-97">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>現在の変更状態を確認する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-103">
+<div class="content">
+<pre class="highlight"><code>git status</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<p>-</p>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-113">
+<h3 id="_diff"><a class="anchor" href="#_diff"></a><a class="link" href="#_diff">4.7. <strong>diff</strong></a></h3>
+<div class="dlist data-line-114">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>変更差分を確認する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-118">
+<div class="content">
+<pre class="highlight"><code>git diff [FileName] [--staged]</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-123">
+<dl>
+<dt class="hdlist1"><em>FileName</em></dt>
+<dd>
+<div class="paragraph data-line-125">
+<p>ファイル名、ディレクトリ名を指定</p>
+</div>
+</dd>
+<dt class="hdlist1">--staged </dt>
+<dd>
+<p>ステージとローカルリポジトリの差分を比較する。指定しない場合はワークツリーとステージの差分を比較する。</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-132">
+<h3 id="_log"><a class="anchor" href="#_log"></a><a class="link" href="#_log">4.8. <strong>log</strong></a></h3>
+<div class="dlist data-line-133">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>変更履歴を確認する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-139">
+<div class="content">
+<pre class="highlight"><code>git log [--oneline] [-p &lt;FileName&gt;] [-n &lt;Number&gt;]</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-144">
+<dl>
+<dt class="hdlist1">--oneline</dt>
+<dd>
+<p>一行で簡潔に表現する</p>
+</dd>
+<dt class="hdlist1">-p <em>FileName</em></dt>
+<dd>
+<p>指定したファイルの変更差分を表示する</p>
+</dd>
+<dt class="hdlist1">-n <em>Number</em></dt>
+<dd>
+<p>指定した数の分だけコミットを遡って表示する</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-154">
+<h3 id="_rm"><a class="anchor" href="#_rm"></a><a class="link" href="#_rm">4.9. <strong>rm</strong></a></h3>
+<div class="dlist data-line-155">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ファイルを削除する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-161">
+<div class="content">
+<pre class="highlight"><code>git rm &lt;FileName&gt; &lt;-r &lt;DirectoryName&gt;&gt; [--cached &lt;FileName&gt;]</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-166">
+<dl>
+<dt class="hdlist1"><em>FileName</em></dt>
+<dd>
+<p>指定したファイルを削除する</p>
+</dd>
+<dt class="hdlist1">-r <em>DirectoryName</em></dt>
+<dd>
+<p>指定したディレクトリを削除する</p>
+</dd>
+<dt class="hdlist1">--cached <em>FileName</em></dt>
+<dd>
+<p>指定したファイルをローカルリポジトリから削除する（ワークツリーのファイルは削除しない）</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-176">
+<h3 id="_mv"><a class="anchor" href="#_mv"></a><a class="link" href="#_mv">4.10. <strong>mv</strong></a></h3>
+<div class="dlist data-line-177">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ファイルを移動する／名前を変更する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-183">
+<div class="content">
+<pre class="highlight"><code>git mv &lt;Old FileName&gt; &lt;New FileName&gt;</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-188">
+<dl>
+<dt class="hdlist1"><em>Old FileName</em></dt>
+<dd>
+<p>変更前ファイル名</p>
+</dd>
+<dt class="hdlist1"><em>New FileName</em></dt>
+<dd>
+<p>変更後ファイル名</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-196">
+<h3 id="_remote_add"><a class="anchor" href="#_remote_add"></a><a class="link" href="#_remote_add">4.11. <strong>remote add</strong></a></h3>
+<div class="dlist data-line-197">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>リモートリポジトリを追加する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-203">
+<div class="content">
+<pre class="highlight"><code>git remote add &lt;RemoteName&gt; &lt;RepositoryAddress&gt;</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-208">
+<dl>
+<dt class="hdlist1"><em>RemoteName</em></dt>
+<dd>
+<p>リモートリポジトリの名前を指定する</p>
+</dd>
+<dt class="hdlist1"><em>RepositoryAddress</em></dt>
+<dd>
+<p>リモートリポジトリのアドレスを指定する</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-216">
+<h3 id="_push"><a class="anchor" href="#_push"></a><a class="link" href="#_push">4.12. <strong>push</strong></a></h3>
+<div class="dlist data-line-217">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>リモートリポジトリに変更を追加する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-223">
+<div class="content">
+<pre class="highlight"><code>git push &lt;RemoteName&gt; &lt;BlaunchName&gt;</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-228">
+<dl>
+<dt class="hdlist1">RemoteName</dt>
+<dd>
+<p>リモートリポジトリをリモート名で指定する</p>
+</dd>
+<dt class="hdlist1">BlaunchName</dt>
+<dd>
+<p>ブランチを指定する</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-236">
+<h3 id="_config"><a class="anchor" href="#_config"></a><a class="link" href="#_config">4.13. <strong>config</strong></a></h3>
+<div class="dlist data-line-237">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>Git configファイル（設定ファイル）を編集する</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-243">
+<div class="content">
+<pre class="highlight"><code>git config [--global] [alias.AliasName &lt;Command&gt;]</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-248">
+<dl>
+<dt class="hdlist1">--global</dt>
+<dd>
+<p>設定をPC全体に対して反映する</p>
+</dd>
+<dt class="hdlist1">alias.<em>AliasName</em> <em>Command</em></dt>
+<dd>
+<p>指定したコマンドにエイリアス名（別名）を指定する</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-256">
+<h3 id="_checkout"><a class="anchor" href="#_checkout"></a><a class="link" href="#_checkout">4.14. <strong>checkout</strong></a></h3>
+<div class="dlist data-line-257">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ワークツリーでのファイルの変更を取り消す</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-263">
+<div class="content">
+<pre class="highlight"><code>git checkout -- &lt;Target&gt;</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-268">
+<dl>
+<dt class="hdlist1"><em>Target</em></dt>
+<dd>
+<div class="ulist data-line-269">
+<ul>
+<li class="data-line-269">
+<p>ファイル名、ディレクトリ名を指定<br></p>
+</li>
+<li class="data-line-270">
+<p>. (ピリオド)<br>
+すべての変更を取り消す</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-276">
+<h3 id="_reset"><a class="anchor" href="#_reset"></a><a class="link" href="#_reset">4.15. <strong>reset</strong></a></h3>
+<div class="dlist data-line-277">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ステージでのファイルの変更を取り消す</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-283">
+<div class="content">
+<pre class="highlight"><code>git reset HEAD &lt;Target&gt;</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-288">
+<dl>
+<dt class="hdlist1"><em>Target</em></dt>
+<dd>
+<div class="ulist data-line-289">
+<ul>
+<li class="data-line-289">
+<p>ファイル名、ディレクトリ名を指定<br></p>
+</li>
+<li class="data-line-290">
+<p>. (ピリオド)<br>
+すべての変更を取り消す</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2 data-line-296">
+<h3 id="_commit_amend"><a class="anchor" href="#_commit_amend"></a><a class="link" href="#_commit_amend">4.16. <strong>commit --amend</strong></a></h3>
+<div class="dlist data-line-297">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>ローカルリポジトリのコミットを元に戻す</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-303">
+<div class="content">
+<pre class="highlight"><code>git commit --amend</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<p>なし</p>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>なし</p>
+</dd>
+</dl>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2 data-line-315">
+<h3 id="_remote"><a class="anchor" href="#_remote"></a><a class="link" href="#_remote">4.17. <strong>remote</strong></a></h3>
+<div class="dlist data-line-316">
+<dl>
+<dt class="hdlist1">[機能]</dt>
+<dd>
+<p>-</p>
+</dd>
+<dt class="hdlist1">[入力形式]</dt>
+<dd>
+<div class="listingblock data-line-321">
+<div class="content">
+<pre class="highlight"><code>-</code></pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">[オプション]</dt>
+<dd>
+<div class="dlist data-line-326">
+<dl>
+<dt class="hdlist1">-</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">[説明]</dt>
+<dd>
+<p>-</p>
+</dd>
+</dl>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
 </div>
 </div>
 </body>
